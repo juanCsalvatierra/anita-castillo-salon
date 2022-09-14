@@ -111,4 +111,117 @@ body {
   line-height: 1.4em;
 }
 
+.container {
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hero__container {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  display: flex;
+  gap: 5.5rem;
+}
+.hero__h1 {
+  padding-bottom: 0.5rem;
+}
+.hero__p {
+  padding-bottom: 2rem;
+}
+
+.carousel {
+  width: 100%;
+  overflow-x: hidden;
+}
+.carousel__ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel__li {
+  padding: 0 7rem;
+}
+
+.services {
+  padding: 6rem 0;
+}
+.services__container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr 2fr;
+  gap: 3rem;
+}
+
+.head {
+  text-align: center;
+}
+.head__h5 {
+  padding-bottom: 0.5rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding-bottom: 24px;
+}
+
+.others {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.about {
+  padding: 6rem 0;
+}
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.about__h5 {
+  padding-bottom: 2rem;
+}
+.about__h2 {
+  padding-bottom: 0.5rem;
+}
+.about__line {
+  padding-bottom: 2rem;
+}
+
+.work {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.footer__container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7rem;
+  place-items: center;
+}
+
+.creator {
+  text-align: end;
+  padding: 0.5rem 1.5rem;
+}
+
 /*# sourceMappingURL=app.css.map */
