@@ -372,12 +372,12 @@ p {
 }
 
 .work {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding: 6rem 1.5rem;
 }
 .work__top {
   max-width: 47.5rem;
   margin: 0 auto;
+  padding-bottom: 3.5rem;
   text-align: center;
 }
 
@@ -392,6 +392,9 @@ p {
   grid-template-columns: repeat(3, 1fr);
   gap: 7rem;
   place-items: center;
+}
+.footer__address {
+  padding-bottom: 1rem;
 }
 .footer__schedule {
   color: var(--secondary);
