@@ -111,6 +111,83 @@ body {
   line-height: 1.4em;
 }
 
+h1 {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+h2 {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+h3 {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 3.375rem;
+}
+
+h4 {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+}
+
+h5 {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h6 {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+p {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+.h5-letterSpacing {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.p-18 {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.creator__info {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .container {
   max-width: 80rem;
   width: 100%;
