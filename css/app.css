@@ -213,16 +213,24 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+.header__logo {
+  width: 5rem;
+}
 .header__ul {
   display: flex;
   gap: 1.5rem;
 }
 
 .hero__container {
-  padding-top: 2rem;
+  padding-top: 4rem;
   padding-bottom: 4rem;
   display: flex;
-  gap: 5.5rem;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+.hero__text {
+  max-width: 27.5rem;
 }
 .hero__h1 {
   padding-bottom: 0.5rem;
@@ -244,8 +252,14 @@ p {
 .hero__p {
   padding-bottom: 2rem;
 }
+.hero__img {
+  max-width: 45rem;
+  border-radius: 2px;
+}
 
 .carousel {
+  padding: 1.5rem 0;
+  background-color: var(--secondary);
   width: 100%;
   overflow-x: hidden;
 }
@@ -258,14 +272,16 @@ p {
 .carousel__li {
   padding: 0 7rem;
 }
+.carousel__img {
+  min-width: 3.5rem;
+}
 
 .services {
   padding: 6rem 0;
 }
 .services__container {
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 1fr 2fr;
+  display: flex;
+  flex-direction: column;
   gap: 3rem;
 }
 
@@ -282,16 +298,48 @@ p {
 }
 
 .card {
+  padding-bottom: 1.5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-  padding-bottom: 24px;
+}
+.card__item {
+  padding: 1rem;
+  background-color: var(--secondary);
+  width: 18.75rem;
+  border-radius: 2px;
+}
+.card__img {
+  height: 22rem;
+  object-fit: cover;
+  padding-bottom: 1rem;
+}
+.card__text {
+  width: 50%;
+}
+.card__separator {
+  width: 20%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--black);
+  margin-bottom: 0.5rem;
 }
 
 .others {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
+}
+.others__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.others__separator {
+  width: 1.5rem;
+  height: 3px;
+  background-color: var(--black);
+  border-radius: 2px;
 }
 
 .about {
@@ -300,7 +348,8 @@ p {
 .about__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
+  place-items: center;
+  gap: 6rem;
 }
 .about__h5 {
   padding-bottom: 2rem;
@@ -310,6 +359,16 @@ p {
 }
 .about__separator {
   margin-bottom: 2rem;
+}
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.about__img:nth-child(1) {
+  grid-column: 1/-1;
+  justify-self: center;
+  width: 15.625rem;
 }
 
 .work {
@@ -336,6 +395,22 @@ p {
 }
 .footer__schedule {
   color: var(--secondary);
+  padding-bottom: 8px;
+}
+.footer__copy {
+  padding-bottom: 1rem;
+}
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+}
+.footer__img {
+  width: 1.5rem;
+}
+.footer__col:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .creator {
