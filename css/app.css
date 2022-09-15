@@ -1,7 +1,10 @@
 :root {
-  --black: #393939;
-  --main-font: Helvetica, Arial, sans-serif;
-  --secondary-font: Verdana;
+  --primary: #ffffff;
+  --secondary: #d0b1af;
+  --accent: #ba5b87;
+  --black: #2b2a29;
+  --black-2: #444241;
+  --main-font: Merriweather Sans, Arial, sans-serif;
 }
 
 * {
@@ -104,6 +107,7 @@ svg {
 }
 
 body {
+  background-color: var(--primary);
   min-height: 100vh;
   font-size: 100%;
   font-family: var(--main-font);
@@ -170,6 +174,7 @@ p {
 .h5-letterSpacing {
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  color: var(--secondary);
 }
 
 .p-18 {
@@ -186,6 +191,12 @@ p {
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.separator {
+  width: 100%;
+  height: 4px;
+  background-color: var(--secondary);
 }
 
 .container {
@@ -215,6 +226,20 @@ p {
 }
 .hero__h1 {
   padding-bottom: 0.5rem;
+}
+.hero__line {
+  position: relative;
+}
+.hero__line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background-color: var(--accent);
+  border-radius: 2px;
+  left: 0;
+  bottom: 0;
 }
 .hero__p {
   padding-bottom: 2rem;
@@ -246,6 +271,11 @@ p {
 
 .head {
   text-align: center;
+  max-width: 47.5rem;
+  margin: 0 auto;
+}
+.head__h2 {
+  padding-bottom: 8px;
 }
 .head__h5 {
   padding-bottom: 0.5rem;
@@ -278,15 +308,24 @@ p {
 .about__h2 {
   padding-bottom: 0.5rem;
 }
-.about__line {
-  padding-bottom: 2rem;
+.about__separator {
+  margin-bottom: 2rem;
 }
 
 .work {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
+.work__top {
+  max-width: 47.5rem;
+  margin: 0 auto;
+  text-align: center;
+}
 
+.footer {
+  background-color: var(--black);
+  color: var(--primary);
+}
 .footer__container {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -295,8 +334,13 @@ p {
   gap: 7rem;
   place-items: center;
 }
+.footer__schedule {
+  color: var(--secondary);
+}
 
 .creator {
+  background-color: var(--primary);
+  color: var(--black);
   text-align: end;
   padding: 0.5rem 1.5rem;
 }
