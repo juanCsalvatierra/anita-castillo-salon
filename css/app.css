@@ -190,8 +190,8 @@ p {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 500;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.625rem;
 }
 
 .button {
@@ -234,6 +234,12 @@ p {
 .header {
   width: 100%;
   padding: 1rem;
+  border-bottom: 1px solid var(--secondary);
+  background-color: var(--primary);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -247,8 +253,8 @@ p {
 }
 
 .hero__container {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
@@ -448,6 +454,13 @@ p {
   color: var(--black);
   text-align: end;
   padding: 0.5rem 1.5rem;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: end;
+}
+.creator__logo {
+  width: 48px;
 }
 
 @media screen and (max-width: 62em) {
@@ -493,13 +506,11 @@ p {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
-  .services,
+  .hero__container,
+.services,
 .about,
-.work {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-  .footer__container {
+.work,
+.footer__container {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
