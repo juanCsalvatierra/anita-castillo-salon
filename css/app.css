@@ -198,8 +198,8 @@ p {
   font-family: "Merriweather Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   text-transform: uppercase;
 }
 
@@ -249,7 +249,8 @@ p {
 .hero__container {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
   justify-content: center;
   align-items: center;
@@ -280,6 +281,7 @@ p {
 .hero__img {
   max-width: 45rem;
   border-radius: 2px;
+  flex-shrink: 1;
 }
 
 .carousel {
@@ -295,7 +297,7 @@ p {
   justify-content: center;
 }
 .carousel__li {
-  padding: 0 7rem;
+  padding: 0 5rem;
 }
 .carousel__img {
   min-width: 3.5rem;
@@ -331,7 +333,7 @@ p {
 .card__item {
   padding: 1rem;
   background-color: var(--secondary);
-  width: 18.75rem;
+  max-width: 18.75rem;
   border-radius: 2px;
 }
 .card__img {
@@ -446,6 +448,85 @@ p {
   color: var(--black);
   text-align: end;
   padding: 0.5rem 1.5rem;
+}
+
+@media screen and (max-width: 62em) {
+  .hero__container {
+    grid-template-columns: 1fr;
+  }
+  .hero__text {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero__h1 {
+    max-width: 31.25rem;
+    margin: 0 auto;
+  }
+  .hero__img {
+    max-width: 100%;
+  }
+  .hero__button {
+    margin: 0 auto;
+  }
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+  .card__item {
+    width: 100%;
+  }
+  .others {
+    flex-wrap: wrap;
+  }
+  h2 {
+    font-size: calc(1.5rem + 1.2vw);
+  }
+}
+@media screen and (max-width: 48em) {
+  .header__nav {
+    display: none;
+  }
+  .header__logo {
+    width: 4rem;
+  }
+  .header .hero__container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .services,
+.about,
+.work {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .footer__container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .about__container,
+.footer__container {
+    grid-template-columns: 1fr;
+  }
+  .about__col:nth-child(1) {
+    text-align: center;
+  }
+  .footer__container {
+    place-items: initial;
+  }
+  .button__a {
+    font-size: 0.875rem;
+  }
+  .button__img {
+    width: 1.25rem;
+  }
+}
+@media screen and (max-width: 30rem) {
+  h1 {
+    font-size: 3rem;
+  }
+  .card {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

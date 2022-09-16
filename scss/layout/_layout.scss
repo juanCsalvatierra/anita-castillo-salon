@@ -38,7 +38,8 @@
 		padding-top: 4rem;
 		padding-bottom: 4rem;
 
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 		gap: 4rem;
 		justify-content: center;
 		align-items: center;
@@ -75,6 +76,7 @@
 	&__img {
 		max-width: 45rem;
 		border-radius: 2px;
+		flex-shrink: 1;
 	}
 }
 
@@ -93,7 +95,7 @@
 	}
 
 	&__li {
-		padding: 0 7rem;
+		padding: 0 5rem;
 	}
 
 	&__img {
@@ -134,7 +136,7 @@
 	&__item {
 		padding: 1rem;
 		background-color: var(--secondary);
-		width: 18.75rem;
+		max-width: 18.75rem;
 		border-radius: 2px;
 	}
 
