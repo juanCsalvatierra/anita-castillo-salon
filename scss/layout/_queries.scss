@@ -1,3 +1,6 @@
+@media screen and (max-width: 90em) {
+}
+
 @media screen and (max-width: 62em) {
 	.hero {
 		&__container {
@@ -69,10 +72,6 @@
 	.about__container,
 	.footer__container {
 		grid-template-columns: 1fr;
-	}
-
-	.about__col:nth-child(1) {
-		text-align: center;
 	}
 
 	.footer__container {
