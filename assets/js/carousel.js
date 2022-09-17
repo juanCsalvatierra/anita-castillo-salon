@@ -1,24 +1,15 @@
-const main = () => {
+export const carousel = () => {
 	const $container = document.querySelector(".carousel");
 	const $ul = document.querySelector(".carousel__ul");
 	const width = $ul.offsetWidth;
+
 	const speed = 1;
-
-	const $ulClone = cloneUl($ul, $container, width);
-	carousel($ul, $ulClone, width, speed);
-};
-
-const cloneUl = ($ul, $container, width) => {
-	const $ul2 = $ul.cloneNode(true);
-	$container.appendChild($ul2);
-	$ul2.style.left = `${width}px`;
-
-	return $ul2;
-};
-
-const carousel = ($ul, $ulClone, width, speed) => {
 	let x = 0;
 	let x2 = width;
+
+	const $ulClone = $ul.cloneNode(true);
+	$container.appendChild($ulClone);
+	$ulClone.style.left = `${width}px`;
 
 	const moveFirst = () => {
 		x -= speed;
@@ -43,5 +34,3 @@ const carousel = ($ul, $ulClone, width, speed) => {
 	setInterval(moveFirst, 10);
 	setInterval(moveSecond, 10);
 };
-
-main();
