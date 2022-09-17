@@ -203,6 +203,14 @@ p {
   text-transform: uppercase;
 }
 
+.mobile__a {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+}
+
 .button {
   padding: 0.5rem 1rem;
   background-color: var(--accent);
@@ -239,7 +247,7 @@ p {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 5;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -250,6 +258,39 @@ p {
 .header__ul {
   display: flex;
   gap: 1.5rem;
+}
+.header__mobile {
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+
+.mobile {
+  background-color: var(--primary);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.mobile__ul {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.mobile__socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.mobile.active {
+  display: block;
 }
 
 .hero__container {
@@ -520,11 +561,39 @@ p {
   }
 }
 @media screen and (max-width: 48em) {
+  .header {
+    justify-content: stretch;
+  }
   .header__nav {
     display: none;
   }
   .header__logo {
     width: 4rem;
+  }
+  .header__button {
+    margin-left: auto;
+  }
+  .burger {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .burger__bar {
+    width: 1.5rem;
+    height: 3px;
+    background-color: var(--black);
+    transition: all 0.3s ease-in-out;
+  }
+  .burger.active .burger__bar:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.active .burger__bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .burger.active .burger__bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
   .header .hero__container {
     padding-top: 3rem;
