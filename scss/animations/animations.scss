@@ -1,0 +1,35 @@
+@use "../base/variables" as *;
+
+.header__a {
+	transition: color 0.2s;
+}
+
+.header__a:hover {
+	color: var(--accent);
+}
+
+.button {
+	transition: background-color 0.2s;
+}
+
+.button:hover {
+	background-color: var(--accent-shade);
+}
+
+.animation {
+	animation: fadeInUp 0.4s cubic-bezier(0, 0, 0.2, 1) 0.55s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+@keyframes fadeInUp {
+	0% {
+		transform: translateY(30px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

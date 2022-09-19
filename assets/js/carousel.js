@@ -17,7 +17,6 @@ export const carousel = () => {
 
 	const moveFirst = () => {
 		x -= speed;
-		console.log(x);
 
 		if (width >= Math.abs(x)) {
 			$ul.style.left = `${x}px`;
@@ -29,11 +28,8 @@ export const carousel = () => {
 	const moveSecond = () => {
 		x2 -= speed;
 
-		console.log(x2);
-
 		if ($ulClone.offsetWidth >= Math.abs(x2)) {
 			$ulClone.style.left = `${x2}px`;
-			console.log(x2);
 		} else {
 			x2 = width;
 		}
