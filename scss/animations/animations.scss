@@ -22,6 +22,12 @@
 	opacity: 0;
 }
 
+.mobile.active {
+	animation: fadeInMobile 0.3s linear;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
 @keyframes fadeInUp {
 	0% {
 		transform: translateY(30px);
@@ -30,6 +36,16 @@
 
 	100% {
 		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInMobile {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
 		opacity: 1;
 	}
 }
