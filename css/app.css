@@ -304,6 +304,9 @@ p {
 .hero__h1 {
   padding-bottom: 0.5rem;
 }
+.hero__p {
+  color: var(--black-2);
+}
 .hero__line {
   position: relative;
 }
@@ -445,6 +448,9 @@ p {
   justify-self: center;
   width: 15.625rem;
 }
+.about__p {
+  color: var(--black-2);
+}
 
 .work {
   padding: 6rem 1.5rem;
@@ -466,6 +472,9 @@ p {
 }
 .work__h2 {
   padding-bottom: 0.5rem;
+}
+.work__p {
+  color: var(--black-2);
 }
 .work__bottom {
   display: flex;

@@ -96,6 +96,10 @@
 		padding-bottom: 0.5rem;
 	}
 
+	&__p {
+		color: var(--black-2);
+	}
+
 	&__line {
 		position: relative;
 	}
@@ -260,6 +264,10 @@
 		justify-self: center;
 		width: 15.625rem;
 	}
+
+	&__p {
+		color: var(--black-2);
+	}
 }
 
 .work {
@@ -285,6 +293,10 @@
 
 	&__h2 {
 		padding-bottom: 0.5rem;
+	}
+
+	&__p {
+		color: var(--black-2);
 	}
 
 	&__bottom {
