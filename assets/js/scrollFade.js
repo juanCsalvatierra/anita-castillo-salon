@@ -1,4 +1,4 @@
-export const scrollFade = () => {
+export function scrollFade() {
 	window.onscroll = () => {
 		let services = document.querySelector(".services");
 		let about = document.querySelector(".about");
@@ -21,4 +21,4 @@ export const scrollFade = () => {
 			work.classList.add("animation");
 		}
 	};
-};
+}

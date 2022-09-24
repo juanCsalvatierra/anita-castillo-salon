@@ -1,4 +1,4 @@
-export const carousel = () => {
+export function carousel() {
 	const $container = document.querySelector(".carousel");
 	const $ul = document.querySelector(".carousel__ul");
 	const width = $ul.offsetWidth;
@@ -8,14 +8,14 @@ export const carousel = () => {
 	let x = 0;
 	let x2 = width;
 
-	const cloneUl = () => {
+	function cloneUl() {
 		$ulClone = $ul.cloneNode(true);
 		$container.appendChild($ulClone);
 		$ulClone.style.left = `${width}px`;
 		$ulClone.style.width = `${$ul.offsetWidth}px`;
-	};
+	}
 
-	const moveFirst = () => {
+	function moveFirst() {
 		x -= speed;
 
 		if (width >= Math.abs(x)) {
@@ -23,9 +23,9 @@ export const carousel = () => {
 		} else {
 			x = width;
 		}
-	};
+	}
 
-	const moveSecond = () => {
+	function moveSecond() {
 		x2 -= speed;
 
 		if ($ulClone.offsetWidth >= Math.abs(x2)) {
@@ -33,10 +33,10 @@ export const carousel = () => {
 		} else {
 			x2 = width;
 		}
-	};
+	}
 
 	cloneUl();
 
 	setInterval(moveFirst, 10);
 	setInterval(moveSecond, 10);
-};
+}

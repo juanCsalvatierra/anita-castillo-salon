@@ -1,4 +1,4 @@
-export const burgerMenu = () => {
+export function burgerMenu() {
 	const $burger = document.querySelector(".burger");
 	const $container = document.querySelector(".mobile");
 	const $mobileAncor = document.querySelectorAll(".mobile__a");
@@ -14,4 +14,4 @@ export const burgerMenu = () => {
 			$container.classList.remove("active");
 		});
 	});
-};
+}
